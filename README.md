@@ -2,8 +2,6 @@
 
 A personal engineering portfolio website showcasing embedded systems, IoT hardware prototypes, simulation modeling, and full-stack software applications developed by **Jaxie H. Jao** (BS Computer Engineering graduate, 2022–2026, Ateneo de Davao University).
 
-![Portfolio Preview](assets/avatar.jpg)
-
 ---
 
 ## ✨ Highlights & Features
