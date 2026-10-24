@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaxie H. Jao — BS Computer Engineering Portfolio</title>
+  <meta name="description"
+    content="Engineering portfolio of Jaxie H. Jao — BS Computer Engineering graduate (2022-2026) showcasing hardware, embedded systems, and full-stack software development.">
+  <meta name="author" content="Jaxie H. Jao">
+
+  <!-- Typography: Outfit & Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Minimal Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#hero" class="brand" aria-label="Jaxie H. Jao - Back to top">
+        <span class="brand-name">Jaxie Jao</span>
+        <span class="brand-dot"></span>
+      </a>
+
+      <!-- Ordered Navigation Tabs -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About Me</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#projects" class="nav-item">Projects</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://github.com/JaxJ7" target="_blank" rel="noopener noreferrer" class="btn-khaki-outline btn-sm">
+          <span>GitHub</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. TITLE / HERO SECTION (Name, Computer Eng, Pic, Contact & GitHub) -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Hero Text Details -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="status-pulse"></span>
+              <span class="badge-role">BS Computer Engineering</span>
+              <span class="badge-sep">&bull;</span>
+              <span>Class of 2022 &mdash; 2026</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="khaki-text">Jaxie H. Jao</span>.<br>
+              Computer Engineer.
+            </h1>
+
+            <p class="hero-bio">
+              Passionate Computer Engineering graduate building automated embedded systems, IoT sensors, hardware
+              prototypes, and full-stack software applications with clean architecture.
+            </p>
+
+            <!-- Hero Contact & GitHub Actions -->
+            <div class="hero-actions-panel">
+              <div class="hero-cta-group">
+                <a href="https://github.com/JaxJ7" target="_blank" rel="noopener noreferrer" class="btn-ghost hero-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>GitHub (@JaxJ7)</span>
+                </a>
+              </div>
+
+              <!-- Direct Contact Box: Email & Contact Number -->
+              <div class="hero-direct-contact">
+                <div class="direct-contact-title">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                  <span>Direct Contact:</span>
+                </div>
+
+                <div class="contact-channels">
+                  <!-- Email Channel -->
+                  <div class="contact-channel-item">
+                    <span class="channel-label">Email:</span>
+                    <a href="mailto:jaxiehjao7@gmail.com" class="channel-val"
+                      id="hero-email-val">jaxiehjao7@gmail.com</a>
+                    <button class="hero-copy-btn" id="hero-copy-email-btn" title="Copy Email" aria-label="Copy Email">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                      <span class="copy-text">Copy</span>
+                    </button>
+                  </div>
+
+                  <!-- Contact Number Channel -->
+                  <div class="contact-channel-item">
+                    <span class="channel-label">Phone:</span>
+                    <a href="tel:09455425170" class="channel-val" id="hero-phone-val">09455425170</a>
+                    <button class="hero-copy-btn" id="hero-copy-phone-btn" title="Copy Contact Number"
+                      aria-label="Copy Contact Number">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                      <span class="copy-text">Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Profile Picture Frame -->
+          <div class="hero-media">
+            <div class="avatar-card-wrapper">
+              <div class="avatar-glow"></div>
+              <div class="avatar-card">
+                <img src="assets/avatar.jpg" alt="Jaxie H. Jao - Computer Engineer" class="avatar-image">
+                <div class="avatar-info-pill">
+                  <span class="chip-status"></span>
+                  <div class="chip-content">
+                    <span class="chip-name">Jaxie H. Jao</span>
+                    <span class="chip-role">BS Computer Engineering</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Engineering Stats Bar -->
+        <div class="stats-bar">
+          <div class="stat-box">
+            <span class="stat-num">2022&ndash;2026</span>
+            <span class="stat-name">Academic Track</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-box">
+            <span class="stat-num">5</span>
+            <span class="stat-name">Featured Engineering Works</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION (Simple intro, Work experience, Skills, and Contact) -->
+    <section class="section about-section" id="about">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-heading-group">
+          <span class="sub-heading">About Me</span>
+          <h2 class="section-title">Background &amp; Engineering Portfolio</h2>
+        </div>
+
+        <!-- 2A. Intro & Contact Strip -->
+        <div class="about-overview-grid">
+          <div class="about-bio-panel">
+            <p class="lead-text">
+              A Computer Engineering graduate eager to apply my skills, gain professional experience, and continue
+              growing in technology and engineering.
+            </p>
+            <p class="body-text">
+              I have a foundation in web development, programming, database management, and electronics. I also have
+              hands-on experience with engineering software, PCB design, Arduino-based systems, and basic electronics. I
+              am a fast learner, adaptable, and always ready to take on new challenges.
+            </p>
+
+            <div class="principles-grid">
+              <div class="principle-item">
+                <span class="principle-number">01</span>
+                <div>
+                  <h4 class="principle-title">Hardware-Software Integration</h4>
+                  <p class="principle-desc">Designing seamless bridges between physical sensors, microcontrollers, and
+                    digital software controls.</p>
+                </div>
+              </div>
+              <div class="principle-item">
+                <span class="principle-number">02</span>
+                <div>
+                  <h4 class="principle-title">Practical Problem Solving</h4>
+                  <p class="principle-desc">Building solutions that solve real community challenges &mdash; from
+                    agricultural ripening chambers to school bell automation.</p>
+                </div>
+              </div>
+              <div class="principle-item">
+                <span class="principle-number">03</span>
+                <div>
+                  <h4 class="principle-title">Full-Stack &amp; Application Development</h4>
+                  <p class="principle-desc">Developing responsive web systems, desktop games, and simulation engines
+                    using modern languages and clean OOP design.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact in About Me -->
+          <div class="about-contact-panel">
+            <div class="about-contact-card">
+              <span class="contact-badge-label">Direct Communication</span>
+              <h3 class="about-contact-title">Let's Connect</h3>
+              <p class="about-contact-desc">
+                Have a project idea, a technical opportunity, or just want to connect? Feel free to reach out. I'd be
+                happy to hear from you!
+              </p>
+
+              <div class="contact-details-list">
+                <div class="contact-detail-row">
+                  <span class="detail-label">Name:</span>
+                  <span class="detail-val">Jaxie H. Jao</span>
+                </div>
+
+                <div class="contact-detail-row">
+                  <span class="detail-label">Email:</span>
+                  <a href="mailto:jaxiehjao7@gmail.com" class="detail-val text-khaki">jaxiehjao7@gmail.com</a>
+                  <button class="mini-copy-btn" id="about-copy-btn" aria-label="Copy Email">Copy</button>
+                </div>
+
+                <div class="contact-detail-row">
+                  <span class="detail-label">Phone:</span>
+                  <a href="tel:09455425170" class="detail-val text-khaki">09455425170</a>
+                  <button class="mini-copy-btn" id="about-copy-phone-btn" aria-label="Copy Phone">Copy</button>
+                </div>
+
+                <div class="contact-detail-row">
+                  <span class="detail-label">GitHub:</span>
+                  <a href="https://github.com/JaxJ7" target="_blank" rel="noopener noreferrer" class="detail-val">
+                    github.com/JaxJ7 &nearr;
+                  </a>
+                </div>
+
+                <div class="contact-detail-row">
+                  <span class="detail-label">Education:</span>
+                  <span class="detail-val">Ateneo de Davao University &bull; BS CpE (2022&ndash;2026)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2B. Work Experience & Education Sub-section -->
+        <div class="about-sub-block" id="experience">
+          <div class="sub-block-header">
+            <span class="sub-heading">Professional Experience</span>
+            <h3 class="sub-block-title">Work Experience</h3>
+          </div>
+
+          <div class="experience-list">
+            <!-- Job 1: Globe Telecom OJT -->
+            <div class="exp-row">
+              <div class="exp-time">
+                <span class="exp-period">May to July 2025</span>
+                <span class="exp-location">Davao City, Davao del Sur</span>
+              </div>
+              <div class="exp-content">
+                <h4 class="exp-role">GLOBE TELECOM &mdash; ON THE JOB TRAINING (OJT)</h4>
+                <div class="exp-company"
+                  style="margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--khaki-primary); font-weight: 500;">
+                  Globe Telecom &bull; <span style="color: var(--text-muted); font-size: 0.88rem;">Abreeza Mall, J.P.
+                    Laurel Avenue, Bajada, Davao City, Davao del Sur</span>
+                </div>
+                <p class="exp-desc">
+                  Completed engineering on-the-job training at Globe Telecom, gaining hands-on exposure to
+                  telecommunications fundamentals and cellular network generations (4G LTE, 5G architecture, signal
+                  propagation, and cell infrastructure). Developed a local website and programmed a custom tower finder
+                  code to locate, map, and query regional cell towers, while supporting enterprise connectivity
+                  workflows and technical operations.
+                </p>
+                <div class="exp-skills">
+                  <span class="mini-tag">Local Web Development</span>
+                  <span class="mini-tag">Cell Tower Finder Code</span>
+                  <span class="mini-tag">4G &amp; 5G Network Tech</span>
+                  <span class="mini-tag">Telecom Fundamentals</span>
+                  <span class="mini-tag">Network Infrastructure</span>
+                  <span class="mini-tag">Technical Operations</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Job 2: Municipal Accounting Office Data Encoder -->
+            <div class="exp-row">
+              <div class="exp-time">
+                <span class="exp-period">May to June 2023</span>
+                <span class="exp-location">Matanao, Davao del Sur</span>
+              </div>
+              <div class="exp-content">
+                <h4 class="exp-role">ACCOUNTING DATA ENCODER</h4>
+                <div class="exp-company"
+                  style="margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--khaki-primary); font-weight: 500;">
+                  Municipal Accounting Office &bull; <span style="color: var(--text-muted); font-size: 0.88rem;">Local
+                    Government Unit of Matanao Poblacion, Matanao, Davao del Sur</span>
+                </div>
+                <p class="exp-desc">
+                  Systematically encoded, audited, and cataloged official municipal accounting records, financial
+                  vouchers, and disbursement journals. Maintained high data entry speed, rigorous numerical accuracy,
+                  and strict document confidentiality for local government systems.
+                </p>
+                <div class="exp-skills">
+                  <span class="mini-tag">Data Encoding</span>
+                  <span class="mini-tag">Accounting Records</span>
+                  <span class="mini-tag">Database Management</span>
+                  <span class="mini-tag">Attention to Detail</span>
+                  <span class="mini-tag">LGU Systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Section -->
+          <div class="education-segment" style="margin-top: 3.5rem;">
+            <div class="sub-block-header" style="margin-bottom: 1.5rem;">
+              <span class="sub-heading">Academic Foundation</span>
+              <h3 class="sub-block-title">Education</h3>
+            </div>
+
+            <div class="experience-list">
+              <!-- College -->
+              <div class="exp-row">
+                <div class="exp-time">
+                  <span class="exp-period">June 2022 to April 2026</span>
+                  <span class="exp-location">Davao City, Philippines</span>
+                </div>
+                <div class="exp-content">
+                  <h4 class="exp-role">ATENEO DE DAVAO UNIVERSITY</h4>
+                  <div class="exp-company"
+                    style="margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--khaki-primary); font-weight: 500;">
+                    BS Computer Engineering &bull; <span style="color: var(--text-muted); font-size: 0.88rem;">Roxas
+                      Ave, Davao City</span>
+                  </div>
+                  <p class="exp-desc">
+                    Higher education curriculum encompassing embedded system development, digital signal processing, IoT
+                    sensor instrumentation, microcontroller architecture, computer engineering mathematics, and capstone
+                    research design.
+                  </p>
+                  <div class="exp-skills">
+                    <span class="mini-tag">BS Computer Engineering</span>
+                    <span class="mini-tag">Embedded Systems</span>
+                    <span class="mini-tag">IoT &amp; Sensors</span>
+                    <span class="mini-tag">Circuit Design</span>
+                    <span class="mini-tag">Software Development</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Senior High -->
+              <div class="exp-row">
+                <div class="exp-time">
+                  <span class="exp-period">June 2020 to March 2022</span>
+                  <span class="exp-location">Davao City, Philippines</span>
+                </div>
+                <div class="exp-content">
+                  <h4 class="exp-role">Ateneo de Davao University Senior High School</h4>
+                  <div class="exp-company"
+                    style="margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--khaki-primary); font-weight: 500;">
+                    STEM Pre-Computer Studies &bull; <span
+                      style="color: var(--text-muted); font-size: 0.88rem;">McArthur Highway, Talomo, Davao City</span>
+                  </div>
+                  <p class="exp-desc">
+                    Senior high school STEM track focused on pre-computer studies, foundational programming logic,
+                    calculus, engineering physics, and analytical problem-solving.
+                  </p>
+                  <div class="exp-skills">
+                    <span class="mini-tag">STEM Pre-Computer Studies</span>
+                    <span class="mini-tag">Algorithmic Logic</span>
+                    <span class="mini-tag">Engineering Physics</span>
+                    <span class="mini-tag">Applied Mathematics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2C. Skills Sub-section (6 Categories from Jaxie's Resume) -->
+        <div class="about-sub-block" id="skills">
+          <div class="sub-block-header">
+            <span class="sub-heading">Technical Capabilities</span>
+            <h3 class="sub-block-title">Skills</h3>
+          </div>
+
+          <div class="skills-grid-four">
+
+            <!-- Category 1: Web Development -->
+            <div class="skills-card">
+              <div class="skills-card-top">
+                <div class="skills-icon">🌐</div>
+                <h4 class="category-name">Web Development</h4>
+              </div>
+              <div class="tags-cluster">
+                <span class="skill-pill">HTML</span>
+                <span class="skill-pill">CSS</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">SQL</span>
+              </div>
+            </div>
+
+            <!-- Category 2: Programming Language -->
+            <div class="skills-card">
+              <div class="skills-card-top">
+                <div class="skills-icon">💻</div>
+                <h4 class="category-name">Programming Language</h4>
+              </div>
+              <div class="tags-cluster">
+                <span class="skill-pill">MATLAB</span>
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">C#</span>
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">C++</span>
+                <span class="skill-pill">Verilog</span>
+              </div>
+            </div>
+
+            <!-- Category 3: Computer skills -->
+            <div class="skills-card">
+              <div class="skills-card-top">
+                <div class="skills-icon">🖥️</div>
+                <h4 class="category-name">Computer skills</h4>
+              </div>
+              <div class="tags-cluster">
+                <span class="skill-pill">Microsoft Suite</span>
+                <span class="skill-pill">Canva</span>
+                <span class="skill-pill">Photoshop</span>
+              </div>
+            </div>
+
+            <!-- Category 4: Engineering Applications -->
+            <div class="skills-card">
+              <div class="skills-card-top">
+                <div class="skills-icon">📐</div>
+                <h4 class="category-name">Engineering Applications</h4>
+              </div>
+              <div class="tags-cluster">
+                <span class="skill-pill">AutoCAD</span>
+                <span class="skill-pill">EagleCAD</span>
+                <span class="skill-pill">SolidWorks</span>
+                <span class="skill-pill">Blender</span>
+              </div>
+            </div>
+
+            <!-- Category 5: Computer Hardware -->
+            <div class="skills-card">
+              <div class="skills-card-top">
+                <div class="skills-icon">⚡</div>
+                <h4 class="category-name">Computer Hardware</h4>
+              </div>
+              <div class="tags-cluster">
+                <span class="skill-pill">PCB design</span>
+                <span class="skill-pill">etching</span>
+                <span class="skill-pill">soldering</span>
+                <span class="skill-pill">logical circuitry</span>
+                <span class="skill-pill">Arduino systems</span>
+              </div>
+            </div>
+
+            <!-- Category 6: Soft Skills -->
+            <div class="skills-card">
+              <div class="skills-card-top">
+                <div class="skills-icon">🤝</div>
+                <h4 class="category-name">Soft Skills</h4>
+              </div>
+              <div class="tags-cluster">
+                <span class="skill-pill">Time Management</span>
+                <span class="skill-pill">Fast learner</span>
+                <span class="skill-pill">Adaptable</span>
+                <span class="skill-pill">Teamwork</span>
+                <span class="skill-pill">Attention to detail</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. PROJECTS SECTION (5 Real Projects from PDF, 10s Auto-scroll, Know More Modal) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+
+        <div class="section-top">
+          <div>
+            <span class="sub-heading">Featured Works</span>
+            <h2 class="section-title">Selected Engineering Projects</h2>
+            <p class="section-subtitle">Real-world hardware, IoT systems, simulations, and software developed during my
+              Computer Engineering studies.</p>
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls-panel">
+            <div class="slide-counter">
+              <span class="current-slide" id="current-slide-num">01</span>
+              <span class="counter-sep">/</span>
+              <span class="total-slides" id="total-slides-num">05</span>
+            </div>
+
+            <div class="slider-btns">
+              <button class="slider-arrow prev" id="slider-prev-btn" aria-label="Previous Project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button class="slider-arrow next" id="slider-next-btn" aria-label="Next Project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Carousel Container -->
+        <div class="slider-wrapper" id="slider-wrapper">
+          <div class="slider-track" id="slider-track">
+
+            <!-- Slide 1: Mango Ripening Chamber (Undergraduate Thesis) -->
+            <article class="slide-card active" data-index="0" data-project-id="mango">
+              <div class="card-image-wrap">
+                <img src="assets/project-mango.jpg" alt="Small-Scale Arduino-Based Mango Ripening Chamber"
+                  class="card-img" loading="lazy">
+                <span class="slide-tag">IoT &bull; Thesis &bull; Embedded</span>
+              </div>
+              <div class="card-info">
+                <div class="card-header">
+                  <span class="project-num">01 / Thesis</span>
+                  <h3 class="card-title">Small-Scale Arduino-Based Mango Ripening Chamber</h3>
+                </div>
+                <p class="card-desc">
+                  An automated climate-controlled chamber engineered as a safer, scientific alternative to toxic calcium
+                  carbide (kalburo). Continuously monitors and regulates temperature, humidity, CO₂, and ethylene gas
+                  concentrations to establish optimal ripening conditions with automatic fan and ultrasonic humidifier
+                  actuation.
+                </p>
+                <div class="card-tags">
+                  <span class="tech-tag">Arduino Uno</span>
+                  <span class="tech-tag">C++</span>
+                  <span class="tech-tag">DHT22</span>
+                  <span class="tech-tag">MH-Z19C CO₂</span>
+                  <span class="tech-tag">MQ-2 Gas</span>
+                  <span class="tech-tag">DS3231 RTC</span>
+                  <span class="tech-tag">SD Logging</span>
+                </div>
+                <div class="card-links">
+                  <button type="button" class="btn-khaki btn-sm btn-know-more" data-project-id="mango">
+                    <span>Know More</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 2: Timekeeper System -->
+            <article class="slide-card" data-index="1" data-project-id="timekeeper">
+              <div class="card-image-wrap">
+                <img src="assets/project-timekeeper.jpg" alt="Timekeeper Arduino Automated Bell & Digital Clock"
+                  class="card-img" loading="lazy">
+                <span class="slide-tag">Embedded &bull; Community SLP</span>
+              </div>
+              <div class="card-info">
+                <div class="card-header">
+                  <span class="project-num">02 / Community</span>
+                  <h3 class="card-title">Timekeeper: Automated Bell &amp; Digital Clock System</h3>
+                </div>
+                <p class="card-desc">
+                  An Arduino-based real-time clock and automated school bell system developed by a team of six and
+                  donated to a local high school. Features a large 7-segment display driven by MAX7219, relay module
+                  bell triggering, persistent EEPROM storage, and a SIM800L GSM module for SMS-based schedule
+                  synchronization.
+                </p>
+                <div class="card-tags">
+                  <span class="tech-tag">Arduino Uno</span>
+                  <span class="tech-tag">C++</span>
+                  <span class="tech-tag">SIM800L GSM</span>
+                  <span class="tech-tag">MAX7219 Driver</span>
+                  <span class="tech-tag">DS1302 RTC</span>
+                  <span class="tech-tag">Relay Module</span>
+                </div>
+                <div class="card-links">
+                  <button type="button" class="btn-khaki btn-sm btn-know-more" data-project-id="timekeeper">
+                    <span>Know More</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 3: Smart Parking System -->
+            <article class="slide-card" data-index="2" data-project-id="parking">
+              <div class="card-image-wrap">
+                <img src="assets/project-parking.jpg" alt="Smart Parking System MATLAB Simulation" class="card-img"
+                  loading="lazy">
+                <span class="slide-tag">MATLAB &bull; Simulation &bull; Logic</span>
+              </div>
+              <div class="card-info">
+                <div class="card-header">
+                  <span class="project-num">03 / Simulation</span>
+                  <h3 class="card-title">Smart Parking Guidance &amp; Simulation System</h3>
+                </div>
+                <p class="card-desc">
+                  A MATLAB simulation developed to optimize parking space allocation and real-time driver guidance.
+                  Detects vehicle entry and exit dynamically, provides visual text-based indicator guidance ("GREEN" for
+                  vacant, "RED" for occupied), and features an automated live vacancy counter.
+                </p>
+                <div class="card-tags">
+                  <span class="tech-tag">MATLAB</span>
+                  <span class="tech-tag">Space Detection</span>
+                  <span class="tech-tag">Simulation Design</span>
+                  <span class="tech-tag">GUI Indicators</span>
+                </div>
+                <div class="card-links">
+                  <button type="button" class="btn-khaki btn-sm btn-know-more" data-project-id="parking">
+                    <span>Know More</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                  </button>
+
+                  <a href="https://github.com/JaxJ7/SmartParkingSystem" target="_blank" rel="noopener noreferrer"
+                    class="link-btn">
+                    <span>Source Code</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 4: Auto Quest Car Rental Website -->
+            <article class="slide-card" data-index="3" data-project-id="autoquest">
+              <div class="card-image-wrap">
+                <img src="assets/project-autoquest.jpg" alt="Auto Quest Car Rental Web Platform" class="card-img"
+                  loading="lazy">
+                <span class="slide-tag">Web &bull; Python &bull; SQLite</span>
+              </div>
+              <div class="card-info">
+                <div class="card-header">
+                  <span class="project-num">04 / Web App</span>
+                  <h3 class="card-title">Auto Quest: Car Rental Web Platform</h3>
+                </div>
+                <p class="card-desc">
+                  A full-featured car rental web application designed for both enterprise employees and customers.
+                  Features user registration with driver's license verification, multi-category fleet browsing (sedan,
+                  compact, luxury), dynamic per-day rental billing, promotional calendar discounts, and admin fleet CRUD
+                  operations.
+                </p>
+                <div class="card-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">HTML5 / CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">SQLite</span>
+                  <span class="tech-tag">CRUD Architecture</span>
+                </div>
+                <div class="card-links">
+                  <button type="button" class="btn-khaki btn-sm btn-know-more" data-project-id="autoquest">
+                    <span>Know More</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                  </button>
+
+                  <a href="https://github.com/JaxJ7/Car-Rental-web-development" target="_blank"
+                    rel="noopener noreferrer" class="link-btn">
+                    <span>Source Code</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 5: Dungeon Adventure RPG -->
+            <article class="slide-card" data-index="4" data-project-id="dungeon">
+              <div class="card-image-wrap">
+                <img src="assets/project-dungeon.jpg" alt="Dungeon Adventure RPG Application" class="card-img"
+                  loading="lazy">
+                <span class="slide-tag">Desktop &bull; C# &bull; WPF</span>
+              </div>
+              <div class="card-info">
+                <div class="card-header">
+                  <span class="project-num">05 / Desktop Game</span>
+                  <h3 class="card-title">Dungeon Adventure: Turn-Based RPG</h3>
+                </div>
+                <p class="card-desc">
+                  A desktop text-and-graphical turn-based RPG created in C# and WPF. Players battle through standard and
+                  boss monsters to reach the final showdown against the creator. Features an in-game store, gacha armor
+                  &amp; weapon luck rolls, inventory system, character mana progression, and drop crafting.
+                </p>
+                <div class="card-tags">
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">WPF (.NET)</span>
+                  <span class="tech-tag">OOP Design</span>
+                  <span class="tech-tag">Game Mechanics</span>
+                  <span class="tech-tag">Gacha System</span>
+                </div>
+                <div class="card-links">
+                  <button type="button" class="btn-khaki btn-sm btn-know-more" data-project-id="dungeon">
+                    <span>Know More</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                  </button>
+
+                  <a href="https://github.com/JaxJ7/Turnbased-RPG-Game" target="_blank" rel="noopener noreferrer"
+                    class="link-btn">
+                    <span>Source Code</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Slider Pagination Bar (5 Dots) -->
+        <div class="slider-pagination" id="slider-pagination">
+          <button class="pag-dot active" data-index="0" aria-label="Go to slide 1"></button>
+          <button class="pag-dot" data-index="1" aria-label="Go to slide 2"></button>
+          <button class="pag-dot" data-index="2" aria-label="Go to slide 3"></button>
+          <button class="pag-dot" data-index="3" aria-label="Go to slide 4"></button>
+          <button class="pag-dot" data-index="4" aria-label="Go to slide 5"></button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive "Know More" Project Modal -->
+  <div class="modal-backdrop" id="project-modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+
+      <div class="modal-content-wrap">
+        <div class="modal-header">
+          <span class="modal-sub-tag" id="modal-tag">Embedded Systems &bull; IoT</span>
+          <h3 class="modal-title" id="modal-title">Project Title</h3>
+          <p class="modal-lead" id="modal-lead"></p>
+        </div>
+
+        <div class="modal-body">
+          <!-- Interactive Project Gallery -->
+          <div class="modal-gallery" id="modal-gallery">
+            <div class="gallery-main-wrap">
+              <img id="gallery-main-img" src="" alt="Project Photo" class="gallery-main-img">
+              <div class="gallery-badge-overlay">
+                <span class="gallery-counter" id="gallery-counter">1 / 6</span>
+                <span class="gallery-caption" id="gallery-caption">Photo Caption</span>
+              </div>
+              <button class="gallery-nav-btn prev" id="gallery-prev-btn" aria-label="Previous photo"
+                title="Previous photo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button class="gallery-nav-btn next" id="gallery-next-btn" aria-label="Next photo" title="Next photo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+
+            <div class="gallery-thumbs-panel">
+              <div class="gallery-thumbs-list" id="gallery-thumbs-list">
+                <!-- Injected dynamically: First 3 thumbnails + 1 '+X more' overlay button -->
+              </div>
+              <button type="button" class="btn-toggle-all-photos" id="gallery-toggle-all-btn">
+                <span id="gallery-toggle-text">View All Photos</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-sec-title">Engineering Architecture &amp; System Design</h4>
+            <p class="modal-sec-text" id="modal-architecture"></p>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-sec-title">Key Technical Highlights &amp; Features</h4>
+            <ul class="modal-feature-list" id="modal-features">
+              <!-- Injected dynamically -->
+            </ul>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-sec-title">Tech Stack &amp; Hardware Components</h4>
+            <div class="tags-cluster" id="modal-tech-stack">
+              <!-- Injected dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a href="https://github.com/JaxJ7" target="_blank" rel="noopener noreferrer" class="btn-khaki"
+            id="modal-github-link">
+            <span>View Code on GitHub</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+          <button class="btn-ghost" id="modal-dismiss-btn">Close Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Minimal Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand">Jaxie H. Jao<span class="brand-dot"></span></span>
+        <span class="footer-copy">&copy; <span id="year">2026</span> Jaxie H. Jao. BS Computer Engineering
+          (2022&ndash;2026).</span>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#hero" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About Me</a>
+        <a href="#experience" class="footer-link">Experience</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="https://github.com/JaxJ7" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="#hero" class="footer-link back-to-top">Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
