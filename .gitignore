@@ -1,0 +1,6 @@
+# Temporary backups and raw extracts
+assets/.certs_backup/
+
+# OS metadata
+.DS_Store
+Thumbs.db

@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavScroll();
   initMobileNav();
   initFooterYear();
+  initCertificatesSlider();
 });
 
 /* --------------------------------------------------------------------------
@@ -239,12 +240,12 @@ function initProjectModal() {
       title: "Small-Scale Arduino-Based Mango Ripening Chamber",
       lead: "An automated climate-controlled chamber engineered as a safer, scientific alternative to toxic calcium carbide (kalburo) for ripening mangoes.",
       photos: [
-        { src: "assets/project-mango.jpg", caption: "Ethylene vs Calcium Carbide vs Control: Experimental Ripening Progression" },
-        { src: "assets/pdf_p15_img2.png", caption: "Chamber Fabrication: Welded Metal Frame & Mango Ripening Trays" },
-        { src: "assets/pdf_p15_img5.png", caption: "Internal DC Circulation Fan & Relay Actuator Control Setup" },
-        { src: "assets/pdf_p15_img4.png", caption: "Power Supply Unit, Sensor Wiring & Arduino Microcontroller Board" },
-        { src: "assets/pdf_p15_img1.png", caption: "Chamber Technical Blueprint & Airflow Dimension Schematic" },
-        { src: "assets/pdf_p15_img3.png", caption: "Chamber External Thermal Enclosure & Insulation Seal Assembly" }
+        { src: "assets/projects/project-mango.jpg", caption: "Ethylene vs Calcium Carbide vs Control: Experimental Ripening Progression" },
+        { src: "assets/projects/pdf_p15_img2.png", caption: "Chamber Fabrication: Welded Metal Frame & Mango Ripening Trays" },
+        { src: "assets/projects/pdf_p15_img5.png", caption: "Internal DC Circulation Fan & Relay Actuator Control Setup" },
+        { src: "assets/projects/pdf_p15_img4.png", caption: "Power Supply Unit, Sensor Wiring & Arduino Microcontroller Board" },
+        { src: "assets/projects/pdf_p15_img1.png", caption: "Chamber Technical Blueprint & Airflow Dimension Schematic" },
+        { src: "assets/projects/pdf_p15_img3.png", caption: "Chamber External Thermal Enclosure & Insulation Seal Assembly" }
       ],
       architecture: "The Small-Scale Arduino-Based Mango Ripening Chamber is an automated system developed as a safer alternative to traditional calcium carbide for ripening mangoes. Driven by an Arduino Uno microcontroller, the system continuously monitors ambient temperature and relative humidity via a DHT22 sensor, carbon dioxide via an MH-Z19C NDIR sensor, and ethylene gas concentration via an MQ-2 sensor. When gas or temperature thresholds dictate, an automated relay module activates DC ventilation fans and an ultrasonic humidifier to regulate optimal ripening conditions. Sensor readings are logged with precise timestamps from a DS3231 RTC module directly onto an SD card for post-harvest empirical analysis.",
       features: [
@@ -264,12 +265,12 @@ function initProjectModal() {
       title: "Timekeeper: Automated Bell & Digital Clock System",
       lead: "An Arduino-based real-time clock and automated bell system developed by a six-person engineering team and donated to Tboli Sbu Senior High School.",
       photos: [
-        { src: "assets/project-timekeeper.jpg", caption: "Official Donation Turnover Ceremony at Tboli Sbu Senior High School" },
-        { src: "assets/pdf_p13_img5.jpeg", caption: "Hardware Soldering & Large-Format 7-Segment LED Circuit Assembly" },
-        { src: "assets/pdf_p13_img6.png", caption: "Outdoor Field Programming & Firmware Uploading to Arduino" },
-        { src: "assets/pdf_p13_img4.jpeg", caption: "Hardware Installation & Live Campus Acoustic Bell Testing" },
-        { src: "assets/pdf_p13_img1.png", caption: "System Hardware Architecture & GSM / RTC Block Diagram" },
-        { src: "assets/pdf_p13_img2.png", caption: "Complete Schematic Wiring & High-Power Driver Circuit Blueprint" }
+        { src: "assets/projects/project-timekeeper.jpg", caption: "Official Donation Turnover Ceremony at Tboli Sbu Senior High School" },
+        { src: "assets/projects/pdf_p13_img5.jpeg", caption: "Hardware Soldering & Large-Format 7-Segment LED Circuit Assembly" },
+        { src: "assets/projects/pdf_p13_img6.png", caption: "Outdoor Field Programming & Firmware Uploading to Arduino" },
+        { src: "assets/projects/pdf_p13_img4.jpeg", caption: "Hardware Installation & Live Campus Acoustic Bell Testing" },
+        { src: "assets/projects/pdf_p13_img1.png", caption: "System Hardware Architecture & GSM / RTC Block Diagram" },
+        { src: "assets/projects/pdf_p13_img2.png", caption: "Complete Schematic Wiring & High-Power Driver Circuit Blueprint" }
       ],
       architecture: "TimeKeeper is an Arduino-based embedded hardware project developed by a team of six and donated to a local high school as part of an SLP (Student Learning Program) initiative. Powered by an Arduino Uno with a DS1302 Real-Time Clock module and EEPROM memory, it drives a large-format 7-segment digital LED display through MAX7219 driver circuitry for high visibility across campus. A SIM800L GSM cellular module allows authorized staff to wirelessly adjust time and modify alarm schedules via standard SMS text messages. High-power relay modules trigger the school's electric bells automatically according to programmed class periods, while buck converters ensure stable DC voltages.",
       features: [
@@ -289,11 +290,11 @@ function initProjectModal() {
       title: "Smart Parking Guidance & Simulation System",
       lead: "A MATLAB-based simulation designed to indicate whether parking spaces are vacant or occupied, providing drivers with an efficient guidance experience.",
       photos: [
-        { src: "assets/project-parking.jpg", caption: "MATLAB Simulation: Coordinate Bay & Occupancy Matrix Overview" },
-        { src: "assets/pdf_p11_img4.png", caption: "Top Lane Dynamic Vacancy & Green LED Guidance Status In Action" },
-        { src: "assets/pdf_p11_img8.png", caption: "All Parking Spaces Available Initial Simulation State" },
-        { src: "assets/pdf_p11_img6.png", caption: "Dynamic Multi-Vehicle Occupancy & Live Path Guidance" },
-        { src: "assets/pdf_p11_img1.png", caption: "Parking Lot Dimensions & Entry Lane Geometric Blueprint" }
+        { src: "assets/projects/project-parking.jpg", caption: "MATLAB Simulation: Coordinate Bay & Occupancy Matrix Overview" },
+        { src: "assets/projects/pdf_p11_img4.png", caption: "Top Lane Dynamic Vacancy & Green LED Guidance Status In Action" },
+        { src: "assets/projects/pdf_p11_img8.png", caption: "All Parking Spaces Available Initial Simulation State" },
+        { src: "assets/projects/pdf_p11_img6.png", caption: "Dynamic Multi-Vehicle Occupancy & Live Path Guidance" },
+        { src: "assets/projects/pdf_p11_img1.png", caption: "Parking Lot Dimensions & Entry Lane Geometric Blueprint" }
       ],
       architecture: "This project is a MATLAB-based simulation designed to model parking space occupancy dynamically and provide real-time guidance to drivers. The system continuously evaluates coordinate slots representing parking lanes and bays. When vehicle entry or departure is simulated, the space detection algorithm toggles vacancy states, updates graphical indicators, and recalculates available capacity. Visual text indicators guide drivers with 'GREEN' (spaces available in lane) and 'RED' (lane occupied) notifications, accompanied by a dynamic vacancy counter.",
       features: [
@@ -312,12 +313,12 @@ function initProjectModal() {
       title: "Auto Quest: Car Rental Web Platform",
       lead: "A full-stack car rental website designed for both corporate employees and customers, featuring multi-tier vehicle reservations and SQL database management.",
       photos: [
-        { src: "assets/project-autoquest.jpg", caption: "Auto Quest Platform: Homepage & Vehicle Booking Hero Banner" },
-        { src: "assets/pdf_p8_img5.png", caption: "Vehicle Catalog: Chevrolet Camaro, Ford Mustang, Mercedes CLA & G-Class" },
-        { src: "assets/pdf_p8_img6.png", caption: "Vehicle Details & Daily Rental Rate Booking Interface" },
-        { src: "assets/pdf_p9_img1.png", caption: "Detailed Vehicle Specification & Performance Metric Sheet" },
-        { src: "assets/pdf_p9_img4.png", caption: "Promotional Pricing Campaigns & Seasonal Special Offers" },
-        { src: "assets/pdf_p9_img5.png", caption: "Administrative SQL Database Dashboard: Fleet & Customer Records" }
+        { src: "assets/projects/project-autoquest.jpg", caption: "Auto Quest Platform: Homepage & Vehicle Booking Hero Banner" },
+        { src: "assets/projects/pdf_p8_img5.png", caption: "Vehicle Catalog: Chevrolet Camaro, Ford Mustang, Mercedes CLA & G-Class" },
+        { src: "assets/projects/pdf_p8_img6.png", caption: "Vehicle Details & Daily Rental Rate Booking Interface" },
+        { src: "assets/projects/pdf_p9_img1.png", caption: "Detailed Vehicle Specification & Performance Metric Sheet" },
+        { src: "assets/projects/pdf_p9_img4.png", caption: "Promotional Pricing Campaigns & Seasonal Special Offers" },
+        { src: "assets/projects/pdf_p9_img5.png", caption: "Administrative SQL Database Dashboard: Fleet & Customer Records" }
       ],
       architecture: "Auto Quest is a full-featured car rental platform engineered with a Python backend and an SQLite relational database. The user interface is built with responsive HTML5, CSS3, and JavaScript. Customers register with driver's license credentials, browse vehicle inventories organized by category (sedans, compacts, subcompacts, and luxury vehicles), and execute reservations on a per-day billing model. The platform incorporates promotional pricing algorithms for holiday sales and exclusive employee discounts, alongside a secure administrative CRUD dashboard.",
       features: [
@@ -337,12 +338,12 @@ function initProjectModal() {
       title: "Dungeon Adventure: Turn-Based RPG Application",
       lead: "A desktop role-playing game built in C# and WPF featuring turn-based monster combat, store economies, chance-based gacha rolls, and potion crafting.",
       photos: [
-        { src: "assets/project-dungeon.jpg", caption: "Final Boss Battle Showdown vs Jaxie Jao (The Creator)" },
-        { src: "assets/pdf_p5_img4.png", caption: "Turn-Based Combat Screen: Mana Skills & Combat Items" },
-        { src: "assets/pdf_p6_img1.png", caption: "In-Game Equipment Marketplace: Weapons & Defensive Armor" },
-        { src: "assets/pdf_p6_img2.png", caption: "Weighted Gacha Banner: Equipment Summoning Mechanics" },
-        { src: "assets/pdf_p6_img3.png", caption: "Character Stat Progression: Level, Attack, Defense & Health" },
-        { src: "assets/pdf_p6_img5.png", caption: "Alchemy Crafting Engine: Monster Drops to Battle Potions" }
+        { src: "assets/projects/project-dungeon.jpg", caption: "Final Boss Battle Showdown vs Jaxie Jao (The Creator)" },
+        { src: "assets/projects/pdf_p5_img4.png", caption: "Turn-Based Combat Screen: Mana Skills & Combat Items" },
+        { src: "assets/projects/pdf_p6_img1.png", caption: "In-Game Equipment Marketplace: Weapons & Defensive Armor" },
+        { src: "assets/projects/pdf_p6_img2.png", caption: "Weighted Gacha Banner: Equipment Summoning Mechanics" },
+        { src: "assets/projects/pdf_p6_img3.png", caption: "Character Stat Progression: Level, Attack, Defense & Health" },
+        { src: "assets/projects/pdf_p6_img5.png", caption: "Alchemy Crafting Engine: Monster Drops to Battle Potions" }
       ],
       architecture: "Dungeon Adventure is a turn-based role-playing application built in C# using Windows Presentation Foundation (WPF). Designed with clean object-oriented architecture, it features player character state tracking (health, mana, attack, defense, experience), an economy store to purchase weapons and armor, a weighted probability gacha roll mechanic for rare gear, an inventory manager, and an alchemy crafting engine to convert monster drops into combat potions. The game culminates in a multi-tier battle progression ending with a boss showdown against the creator.",
       features: [
@@ -636,7 +637,8 @@ function initNavScroll() {
     { id: 'about', el: document.getElementById('about') },
     { id: 'experience', el: document.getElementById('experience') },
     { id: 'skills', el: document.getElementById('skills') },
-    { id: 'projects', el: document.getElementById('projects') }
+    { id: 'projects', el: document.getElementById('projects') },
+    { id: 'certificates', el: document.getElementById('certificates') }
   ].filter(item => item.el !== null);
 
   function updateActiveNav() {
@@ -653,11 +655,11 @@ function initNavScroll() {
 
     let activeId = 'hero';
 
-    // If near bottom of the page, activate the last section (projects)
+    // If near bottom of the page, activate the last section (certificates)
     const isBottom = (window.innerHeight + scrollY) >= (document.documentElement.scrollHeight - 60);
 
     if (isBottom) {
-      activeId = 'projects';
+      activeId = 'certificates';
     } else {
       // 150px threshold accounts for the 72px fixed header plus reading offset
       const triggerOffset = 150;
@@ -749,3 +751,457 @@ function initFooterYear() {
     yearEl.textContent = new Date().getFullYear();
   }
 }
+
+/* --------------------------------------------------------------------------
+   8. Continuous Infinite Loop Certificate Carousel & Preview Modal
+   -------------------------------------------------------------------------- */
+const certificatesData = [
+  {
+    title: "AI Essentials: Theory and Practice",
+    badge: "Course Accomplishment",
+    date: "August 2026",
+    issuer: "University of the Philippines Open University (UPOU)",
+    img: "assets/Certificates/Certificate_1.png",
+    desc: "Rigorous academic course focused on modern artificial intelligence concepts, core machine learning paradigms, neural computing basics, and ethical frameworks for responsible AI deployment in computing applications.",
+    skills: ["Artificial Intelligence", "Machine Learning", "Statistical Modeling", "Python", "AI Ethics"]
+  },
+  {
+    title: "Student Leadership Award for Service-Learning",
+    badge: "Leadership Award",
+    date: "May 9, 2025",
+    issuer: "Arrupe Office of Social Formation • AdDU (Pabuos 2025)",
+    img: "assets/Certificates/Certificate_2.png",
+    desc: "Conferred during the 2025 Pabuos Recognition ceremony for exemplary student leadership, project management, and collaborative service in deploying engineering solutions for community social-learning partners.",
+    skills: ["Team Leadership", "Project Management", "Community Outreach", "Service-Learning", "Public Speaking"]
+  },
+  {
+    title: "Stop, Label, and Detect: Introduction to YOLO",
+    badge: "AI Seminar",
+    date: "April 30, 2025",
+    issuer: "PROCESSOR • Ateneo de Davao University",
+    img: "assets/Certificates/Certificate_3.png",
+    desc: "Hands-on computer vision seminar detailing deep learning object detection using YOLO (You Only Look Once). Covered dataset annotation, bounding box labeling, training models, and deploying real-time inference.",
+    skills: ["YOLO Architecture", "Computer Vision", "Object Detection", "Image Annotation", "Deep Learning"]
+  },
+  {
+    title: "The Art of 3D Printing in Engineering",
+    badge: "Hands-on Workshop",
+    date: "February 5–12, 2025",
+    issuer: "GEARS & PROCESSOR • AdDU Robotics Laboratory",
+    img: "assets/Certificates/Certificate_4.png",
+    desc: "Comprehensive engineering workshop on additive manufacturing technologies, FDM slicing parameter tuning, bed adhesion, structural infill patterns, and rapid hardware casing prototyping for IoT microcontrollers.",
+    skills: ["3D Printing", "Additive Manufacturing", "FDM Slicing", "Hardware Enclosures", "CAD Modeling"]
+  },
+  {
+    title: "Web Development Fundamentals: ASP.NET Core",
+    badge: "Web Seminar",
+    date: "November 18, 2024",
+    issuer: "PROCESSOR • Ateneo de Davao University",
+    img: "assets/Certificates/Certificate_5.png",
+    desc: "Practical full-stack web development workshop utilizing C# and ASP.NET Core. Covered RESTful API design, controller-view patterns, middleware pipelines, and database integration.",
+    skills: ["ASP.NET Core", "C#", "Web APIs", "MVC Pattern", "Backend Engineering", "HTTP Pipelines"]
+  },
+  {
+    title: "GitHub: Guide to Basics",
+    badge: "Webinar",
+    date: "May 15, 2024",
+    issuer: "PROCESSOR (Computer Engineering Students' Org)",
+    img: "assets/Certificates/Certificate_6.png",
+    desc: "In-depth workshop focused on modern software engineering workflows: Git branch management, rebasing, pull requests, collaborative merge conflict resolution, and CI/CD versioning.",
+    skills: ["Git", "GitHub", "Version Control", "Code Review", "Branching Workflows", "Team Collaboration"]
+  },
+  {
+    title: "Artificial Intelligence & Machine Learning",
+    badge: "AI Workshop",
+    date: "May 4, 2024",
+    issuer: "PROCESSOR (Online Workshop)",
+    img: "assets/Certificates/Certificate_7.png",
+    desc: "Intensive university workshop covering supervised and unsupervised learning algorithms, feature engineering, loss functions, regression modeling, and performance evaluation metrics.",
+    skills: ["Machine Learning", "Supervised Learning", "Regression Analysis", "Feature Engineering", "Data Analytics"]
+  },
+  {
+    title: "SQL Fundamentals: A Beginner's Guide",
+    badge: "Database Workshop",
+    date: "April 30, 2024",
+    issuer: "PROCESSOR (Online Workshop)",
+    img: "assets/Certificates/Certificate_8.png",
+    desc: "Technical webinar exploring relational database architecture, relational algebra, SQL querying, JOINs, aggregations, schema normalization (1NF–3NF), and ACID transactions.",
+    skills: ["SQL", "Relational Databases", "Schema Normalization", "Query Optimization", "Data Integrity"]
+  },
+  {
+    title: "Circuit Creation: Etching & Soldering",
+    badge: "Hardware Workshop",
+    date: "March 4, 2024",
+    issuer: "SELECOMES • Ateneo de Davao University",
+    img: "assets/Certificates/Certificate_9.png",
+    desc: "Practical laboratory workshop involving physical copper-clad board transfer, ferric chloride chemical etching, PCB drilling, through-hole and SMD soldering, and oscilloscope continuity testing.",
+    skills: ["PCB Etching", "Precision Soldering", "Hardware Prototyping", "Continuity Testing", "Lab Safety"]
+  },
+  {
+    title: "Circuit Design: EagleCAD Seminar",
+    badge: "CAD Seminar",
+    date: "February 28, 2024",
+    issuer: "SELECOMES • Ateneo de Davao University",
+    img: "assets/Certificates/Certificate_10.png",
+    desc: "Professional electronic design automation (EDA) training covering electronic schematic capture, PCB component placement, trace routing constraints, ground plane isolation, and Gerber CAM export.",
+    skills: ["EagleCAD", "Schematic Capture", "PCB Routing", "Electronic Design Automation", "Gerber Generation"]
+  },
+  {
+    title: "Mastering the Circuitry: CpE Hardware",
+    badge: "Hardware Workshop",
+    date: "February 21, 2024",
+    issuer: "PROCESSOR • Ateneo de Davao University",
+    img: "assets/Certificates/Certificate_11.png",
+    desc: "Academic symposium exploring microelectronic advancements, digital circuitry logic, embedded controller architectures, and hardware-software integration methodologies.",
+    skills: ["Hardware Architecture", "Digital Electronics", "Microcontroller Interfacing", "Logical Circuitry"]
+  },
+  {
+    title: "AI Ready ASEAN: Hour of Code Training",
+    badge: "Hour of Code",
+    date: "2024",
+    issuer: "ASEAN Foundation & Limitless Lab (Google.org)",
+    img: "assets/Certificates/Certificate_12.png",
+    desc: "Regional digital empowerment program conducted across Southeast Asia to train youth in computational logic, algorithmic thinking, and foundational data science principles.",
+    skills: ["Computational Thinking", "Algorithmic Logic", "Data Fundamentals", "Python", "ASEAN Digital Skills"]
+  },
+  {
+    title: "Computer Studies Programming Camp",
+    badge: "Programming Camp",
+    date: "June 22–24, 2022",
+    issuer: "Ateneo de Davao University (CSSEC)",
+    img: "assets/Certificates/Certificate_13.png",
+    desc: "Intensive 3-day coding camp on algorithmic problem solving, computational complexity, object-oriented concepts in C++, and collaborative programming challenges.",
+    skills: ["C++", "Algorithmic Problem Solving", "Data Structures", "Object-Oriented Programming", "Hackathon"]
+  }
+];
+
+function initCertificatesSlider() {
+  const wrapper = document.getElementById('cert-slider-wrapper');
+  const track = document.getElementById('cert-slider-track');
+  const prevBtn = document.getElementById('cert-prev-btn');
+  const nextBtn = document.getElementById('cert-next-btn');
+  const currentNumEl = document.getElementById('cert-current-num');
+  const totalNumEl = document.getElementById('cert-total-num');
+  const dotsWrap = document.getElementById('cert-pagination-dots');
+
+  // Preview Modal Elements
+  const certModalBackdrop = document.getElementById('cert-preview-backdrop');
+  const certModalCloseBtn = document.getElementById('cert-preview-close-btn');
+  const certModalDismissBtn = document.getElementById('cert-preview-dismiss-btn');
+  const modalImg = document.getElementById('cert-preview-img');
+  const modalBadge = document.getElementById('cert-preview-badge');
+  const modalDate = document.getElementById('cert-preview-date');
+  const modalIssuer = document.getElementById('cert-preview-issuer');
+  const modalTitle = document.getElementById('cert-preview-title');
+  const modalPrevBtn = document.getElementById('cert-modal-prev-btn');
+  const modalNextBtn = document.getElementById('cert-modal-next-btn');
+  const modalPagerCount = document.getElementById('cert-modal-pager-count');
+
+  if (!wrapper || !track) return;
+
+  const rawSlides = Array.from(track.querySelectorAll('.cert-card-slide'));
+  const totalSlides = rawSlides.length;
+  if (totalSlides === 0) return;
+
+  if (totalNumEl) {
+    totalNumEl.textContent = String(totalSlides).padStart(2, '0');
+  }
+
+  // 1. Tag each real slide and inject preview hover hint
+  rawSlides.forEach((slide, idx) => {
+    slide.setAttribute('data-real-index', idx);
+    const thumbBox = slide.querySelector('.cert-thumb-box');
+    if (thumbBox && !thumbBox.querySelector('.cert-thumb-preview-hint')) {
+      const hint = document.createElement('div');
+      hint.className = 'cert-thumb-preview-hint';
+      hint.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"></circle><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path></svg><span>Click for Preview &amp; Details</span>`;
+      thumbBox.appendChild(hint);
+    }
+  });
+
+  // 2. Clone slides for Continuous Seamless Infinite Loop
+  const CLONES_COUNT = 3;
+
+  // Clone last CLONES_COUNT slides to prepend (in reverse loop order so DOM order is correct: [10, 11, 12])
+  for (let i = totalSlides - 1; i >= totalSlides - CLONES_COUNT; i--) {
+    const clone = rawSlides[i].cloneNode(true);
+    clone.classList.add('is-clone');
+    clone.setAttribute('data-real-index', i);
+    track.insertBefore(clone, track.firstChild);
+  }
+
+  // Clone first 3 slides to append
+  for (let i = 0; i < CLONES_COUNT; i++) {
+    const clone = rawSlides[i].cloneNode(true);
+    clone.classList.add('is-clone');
+    clone.setAttribute('data-real-index', i);
+    track.appendChild(clone);
+  }
+
+  const allSlides = Array.from(track.querySelectorAll('.cert-card-slide'));
+  let currentTrackIndex = CLONES_COUNT; // Starts at real slide 0
+  let isAnimating = false;
+
+  // 3. Create pagination dots
+  if (dotsWrap) {
+    dotsWrap.innerHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'cert-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Go to certificate ${i + 1}`);
+      dot.addEventListener('click', () => {
+        if (isAnimating) return;
+        isAnimating = true;
+        currentTrackIndex = CLONES_COUNT + i;
+        goToTrackIndex(currentTrackIndex, true);
+      });
+      dotsWrap.appendChild(dot);
+    }
+  }
+
+  // 4. Position and center calculation
+  function goToTrackIndex(index, withAnimation = true) {
+    currentTrackIndex = index;
+    if (withAnimation) {
+      track.style.transition = 'transform 0.55s cubic-bezier(0.22, 1, 0.36, 1)';
+    } else {
+      track.style.transition = 'none';
+    }
+
+    const targetSlide = allSlides[currentTrackIndex];
+    if (!targetSlide) return;
+
+    const wrapperWidth = wrapper.offsetWidth;
+    const slideLeft = targetSlide.offsetLeft;
+    const slideWidth = targetSlide.offsetWidth;
+
+    const translateX = (wrapperWidth / 2) - (slideLeft + slideWidth / 2);
+    track.style.transform = `translateX(${translateX}px)`;
+
+    // Update active-center highlight class
+    allSlides.forEach((slide, idx) => {
+      const isCenter = idx === currentTrackIndex;
+      slide.classList.toggle('active-center', isCenter);
+      slide.setAttribute('aria-hidden', isCenter ? 'false' : 'true');
+    });
+
+    // Update real index counters and dots
+    const realIndex = parseInt(targetSlide.getAttribute('data-real-index'), 10);
+    if (currentNumEl) {
+      currentNumEl.textContent = String(realIndex + 1).padStart(2, '0');
+    }
+    if (dotsWrap) {
+      const dots = dotsWrap.querySelectorAll('.cert-dot');
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === realIndex);
+      });
+    }
+  }
+
+  // 5. Seamless infinite wrap on transitionend
+  track.addEventListener('transitionend', (e) => {
+    if (e.target !== track) return;
+    isAnimating = false;
+
+    // Passed the end of real slides -> teleport back to start real slide
+    if (currentTrackIndex >= CLONES_COUNT + totalSlides) {
+      currentTrackIndex = currentTrackIndex - totalSlides;
+      goToTrackIndex(currentTrackIndex, false);
+    }
+    // Before the start of real slides -> teleport to end real slide
+    else if (currentTrackIndex < CLONES_COUNT) {
+      currentTrackIndex = currentTrackIndex + totalSlides;
+      goToTrackIndex(currentTrackIndex, false);
+    }
+  });
+
+  function nextSlide() {
+    if (isAnimating) return;
+    isAnimating = true;
+    currentTrackIndex++;
+    goToTrackIndex(currentTrackIndex, true);
+    setTimeout(() => { isAnimating = false; }, 580);
+  }
+
+  function prevSlide() {
+    if (isAnimating) return;
+    isAnimating = true;
+    currentTrackIndex--;
+    goToTrackIndex(currentTrackIndex, true);
+    setTimeout(() => { isAnimating = false; }, 580);
+  }
+
+  // Arrow button navigation
+  if (prevBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      prevSlide();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      nextSlide();
+    });
+  }
+
+  // Card click behavior:
+  // - Clicking active center card opens Preview & Details modal!
+  // - Clicking side card smoothly rotates it into center focus!
+  allSlides.forEach((slide, idx) => {
+    slide.addEventListener('click', () => {
+      const realIdx = parseInt(slide.getAttribute('data-real-index'), 10);
+      if (idx === currentTrackIndex) {
+        openCertModal(realIdx);
+      } else {
+        if (isAnimating) return;
+        isAnimating = true;
+        currentTrackIndex = idx;
+        goToTrackIndex(currentTrackIndex, true);
+        setTimeout(() => { isAnimating = false; }, 580);
+      }
+    });
+  });
+
+  // Touch and Swipe navigation
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  wrapper.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  wrapper.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const swipeThreshold = 40;
+    if (touchEndX < touchStartX - swipeThreshold) {
+      nextSlide();
+    } else if (touchEndX > touchStartX + swipeThreshold) {
+      prevSlide();
+    }
+  }, { passive: true });
+
+  // Re-center on window resize
+  window.addEventListener('resize', () => {
+    goToTrackIndex(currentTrackIndex, false);
+  });
+
+  /* ---------------- Modal Controller ---------------- */
+  let activeModalIndex = 0;
+
+  function openCertModal(idx) {
+    if (idx < 0) idx = totalSlides - 1;
+    if (idx >= totalSlides) idx = 0;
+    activeModalIndex = idx;
+
+    // Directly extract from the exact raw slide element in the DOM
+    const targetCard = rawSlides[activeModalIndex];
+    if (!targetCard || !certModalBackdrop) return;
+
+    const cardImg = targetCard.querySelector('.cert-card-img');
+    const cardBadge = targetCard.querySelector('.cert-slide-badge');
+    const cardTitle = targetCard.querySelector('.cert-card-title, .cert-title');
+    const cardOrg = targetCard.querySelector('.cert-card-org');
+    const cardDate = targetCard.querySelector('.cert-card-date span');
+
+    const imgSrc = cardImg ? cardImg.getAttribute('src') : '';
+    const titleText = cardTitle ? cardTitle.textContent.trim() : '';
+    const badgeText = cardBadge ? cardBadge.textContent.trim() : 'Certificate';
+    const orgText = cardOrg ? cardOrg.textContent.trim() : '';
+    const dateText = cardDate ? cardDate.textContent.trim() : '';
+
+    if (modalImg) {
+      modalImg.style.opacity = '0.35';
+      modalImg.src = imgSrc;
+      modalImg.alt = titleText;
+      setTimeout(() => {
+        modalImg.style.opacity = '1';
+      }, 50);
+    }
+
+    if (modalBadge) modalBadge.textContent = badgeText;
+    if (modalDate) modalDate.textContent = dateText;
+    if (modalIssuer) modalIssuer.textContent = orgText;
+    if (modalTitle) modalTitle.textContent = titleText;
+
+    if (modalPagerCount) {
+      modalPagerCount.textContent = `${String(activeModalIndex + 1).padStart(2, '0')} / ${String(totalSlides).padStart(2, '0')}`;
+    }
+
+    // Keep background carousel aligned with the currently viewed certificate
+    currentTrackIndex = CLONES_COUNT + activeModalIndex;
+    goToTrackIndex(currentTrackIndex, false);
+
+    certModalBackdrop.classList.add('open');
+    certModalBackdrop.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCertModal() {
+    if (!certModalBackdrop) return;
+    certModalBackdrop.classList.remove('open');
+    certModalBackdrop.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  if (certModalCloseBtn) certModalCloseBtn.addEventListener('click', closeCertModal);
+  if (certModalDismissBtn) certModalDismissBtn.addEventListener('click', closeCertModal);
+
+  if (modalPrevBtn) {
+    modalPrevBtn.addEventListener('click', () => {
+      openCertModal(activeModalIndex - 1);
+    });
+  }
+
+  if (modalNextBtn) {
+    modalNextBtn.addEventListener('click', () => {
+      openCertModal(activeModalIndex + 1);
+    });
+  }
+
+  if (certModalBackdrop) {
+    certModalBackdrop.addEventListener('click', (e) => {
+      if (e.target === certModalBackdrop) {
+        closeCertModal();
+      }
+    });
+  }
+
+  // Keyboard navigation
+  window.addEventListener('keydown', (e) => {
+    // If modal is open, navigate or close modal
+    if (certModalBackdrop && certModalBackdrop.classList.contains('open')) {
+      if (e.key === 'Escape') {
+        closeCertModal();
+      } else if (e.key === 'ArrowLeft') {
+        openCertModal(activeModalIndex - 1);
+      } else if (e.key === 'ArrowRight') {
+        openCertModal(activeModalIndex + 1);
+      }
+      return;
+    }
+
+    // Carousel keyboard navigation when section is in view
+    const certSection = document.getElementById('certificates');
+    if (!certSection) return;
+    const rect = certSection.getBoundingClientRect();
+    const inView = rect.top < window.innerHeight && rect.bottom > 0;
+    if (!inView) return;
+
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
+    }
+  });
+
+  // Initial positioning
+  setTimeout(() => {
+    goToTrackIndex(CLONES_COUNT, false);
+  }, 60);
+}
+
+
+
